@@ -1,7 +1,0 @@
-export PATH="/home/shubham/flutter/bin:$PATH"
-
-export PATH="/home/shubham/flutter/bin/cache/dart-sdk/bin:$PATH"
-
-export PATH="/usr/lib/dart/bin:$PATH" #this is for dart web
-
-export PATH="$PATH":"$HOME/.pub-cache/bin"

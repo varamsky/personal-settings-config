@@ -13,6 +13,6 @@ echo "Added lib/screens/home_screen.dart"
 text="import 'package:$1/screens/home_screen.dart';"
 #using '@' as delimiter in sed command and adding $text import statement in second line of main.dart
 #used '@' as delimiter as $text contains '/' and it affected the sed command
-sed -i "2s@^@$text\n@" test_auto/lib/main.dart
+sed -i "2s@^@$text\n@" $1/lib/main.dart
 cd $1/
 intellij-idea-community .

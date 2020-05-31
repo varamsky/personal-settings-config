@@ -15,7 +15,4 @@ text="import 'package:$1/screens/home_screen.dart';"
 #used '@' as delimiter as $text contains '/' and it affected the sed command
 sed -i "2s@^@$text\n@" $1/lib/main.dart
 cd $1/
-git init
-git add .
-git commit -m "Initial commit"
 intellij-idea-community .

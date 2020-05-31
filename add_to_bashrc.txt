@@ -23,7 +23,16 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  To run this flutter_automate shell script from anywhere on my system  @@@@@@@@@@@@@@@@@@@@@@@@@@@#
 
 #This is the path to the directory on my system
+
 export PATH="/mnt/6C0801E20801ABE0/IdeaProjects/personal-settings-config/AUTOMATE_flutter_project:$PATH"
+
+#Basically it's an alias to cd to specific project in IdeaProjects
+#Used a function as alias command doesn't use arguments like $1,$2
+
+IdeaProjects() {
+    #alias IdeaProjects="cd /mnt/6C0801E20801ABE0/IdeaProjects/$1"
+    cd "/mnt/6C0801E20801ABE0/IdeaProjects/$1"
+}
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#
 

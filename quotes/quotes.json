@@ -2,7 +2,7 @@
     "quotes-data": [
         {
 	    	"quote": "Be yourself and people will like you.",
-            "author": "Jeff Kinney (Diary of a Wimpy Kid)"
+	    	"author": "Jeff Kinney (Diary of a Wimpy Kid)"
         },
         {
             "quote": "The worst enemy to creativity is self-doubt.",
@@ -10,31 +10,31 @@
         },
         {
         	"quote": "It’s the possibility of having a dream come true that makes life interesting.",
-			"author": "Paulo Coelho (The Alchemist)"
+        	"author": "Paulo Coelho (The Alchemist)"
         },
         {
         	"quote": "But love was always something heavy for me. Something I had to carry.",
-			"author": "Benjamin Alire Sáenz (Aristotle and Dante Discover the Secrets of the Universe)"
+        	"author": "Benjamin Alire Sáenz (Aristotle and Dante Discover the Secrets of the Universe)"
         },
         {
         	"quote": "And it seemed to me that Dante's face was a map of the world. A world without any darkness.",
-			"author": "Benjamin Alire Sáenz (Aristotle and Dante Discover the Secrets of the Universe)"
+        	"author": "Benjamin Alire Sáenz (Aristotle and Dante Discover the Secrets of the Universe)"
         },
         {
         	"quote": "I had a feeling there was something wrong with me. I guess I was a mystery even to myself.",
-			"author": "Benjamin Alire Sáenz (Aristotle and Dante Discover the Secrets of the Universe)"
+        	"author": "Benjamin Alire Sáenz (Aristotle and Dante Discover the Secrets of the Universe)"
         },
         {
         	"quote": "All animals are equal, but some animals are more equal than others.",
-			"author": "George Orwell (Animal Farm)"
+        	"author": "George Orwell (Animal Farm)"
         },
         {
         	"quote": "The last to learn of gossip are the parties concerned.",
-			"author": "Khushwant Singh (Train to Pakistan)"
+        	"author": "Khushwant Singh (Train to Pakistan)"
         },
         {
         	"quote": "Men go to far greater lengths to avoid what they fear than to obtain what they desire.",
-			"author": "Dan Brown (The Da Vinci Code)"
+        	"author": "Dan Brown (The Da Vinci Code)"
         },
         {
         	"quote": "By its very nature, history is always a one-sided account.",
@@ -79,6 +79,10 @@
         {
         	"quote": "It's your road, and yours alone.Others may walk it with you, but no one can walk it for you.",
         	"author": "Rumi"
-        } 
+        },
+        {
+        	"quote": "The man who moves a mountain begins by carrying away small stones.",
+        	"author": "Confucius"
+        }
     ]
 }

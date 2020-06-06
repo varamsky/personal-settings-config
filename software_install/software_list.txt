@@ -1,0 +1,38 @@
+anydesk
+google-chrome-stable
+kazam
+kdeconnect
+vlc
+
+git
+dart
+flutter
+intellij-idea-community
+	- Plugins
+		- Flutter
+		- dart
+		- Material Theme UI
+		- Night Owl Theme
+		- Rainbow Brackets
+
+kdenlive
+spotify
+wps-office-multilang
+neofetch
+deepin picker
+
+gnome-tweak-tool
+	-fonts
+		- Monaco
+	-extensions
+		- clipboard indicator
+		- dash to dock
+		- netspeed
+		- places status indicator
+	-appearance
+		- themes
+			- applications : Sweet-Dark
+			- cursor : Bibata_Ice
+			- icons : Xenlism-Wildfire-Saturday
+			- shell : Sweet-Dark
+

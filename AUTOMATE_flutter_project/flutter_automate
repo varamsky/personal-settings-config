@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #mkdir $1
-cd /mnt/6C0801E20801ABE0/IdeaProjects/
+cd /media/shubham/6C0801E20801ABE0/IdeaProjects/
 pwd
 flutter create $1
 rm $1/lib/main.dart

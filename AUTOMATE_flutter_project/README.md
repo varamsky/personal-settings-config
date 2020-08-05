@@ -5,7 +5,7 @@ I use this to automate the process of creation of a minimal flutter project also
 I add this line :
 
 ```
-export PATH="/mnt/6C0801E20801ABE0/IdeaProjects/personal-settings-config/AUTOMATE_flutter_project:$PATH"
+export PATH="/media/shubham/6C0801E20801ABE0/IdeaProjects/personal-settings-config/AUTOMATE_flutter_project:$PATH"
 ```
 
 which is the path to this project folder in my home/.bashrc file.

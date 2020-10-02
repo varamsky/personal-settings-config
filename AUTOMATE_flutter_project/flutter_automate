@@ -1,21 +1,47 @@
 #!/usr/bin/env bash
-#mkdir $1
-cd /mnt/6C0801E20801ABE0/IdeaProjects/
+
+# this is the directory location which contains all of my flutter projects
+projects_directory="/mnt/6C0801E20801ABE0/IdeaProjects/"
+
+# moving to the projects_directory
+cd $projects_directory
+
 pwd
+
+# creating a new flutter project
 flutter create $1
+
+# remving the default main.dart file
 rm $1/lib/main.dart
 echo "Removed main.dart"
+
+# copying the main.dart template to this project
 cp personal-settings-config/AUTOMATE_flutter_project/template_main.dart $1/lib/main.dart
 echo "Added lib/main.dart"
+
+# creating a "screens" directory
 mkdir $1/lib/screens/
+
+# copying the home_screen.dart template to this project
 cp personal-settings-config/AUTOMATE_flutter_project/template_home_screen.dart $1/lib/screens/home_screen.dart
 echo "Added lib/screens/home_screen.dart"
+
+# text to be added to the top of the main.dart file
 text="import 'package:$1/screens/home_screen.dart';"
-#using '@' as delimiter in sed command and adding $text import statement in second line of main.dart
-#used '@' as delimiter as $text contains '/' and it affected the sed command
+
+# actually adding the $text
+# using '@' as delimiter in sed command and adding $text import statement in second line of main.dart
+# used '@' as delimiter as $text contains '/' and it affected the sed command
 sed -i "2s@^@$text\n@" $1/lib/main.dart
+
+# moving to the location of the newly created flutter project
 cd $1/
+
+# inintializing a git repository
 git init
 git add .
 git commit -m "Initial commit"
-intellij-idea-community .
+
+# launcing the newly created flutter project with the editor of choice
+#intellij-idea-community .
+code .

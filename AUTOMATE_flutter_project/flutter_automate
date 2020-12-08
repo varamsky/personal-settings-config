@@ -11,7 +11,7 @@ pwd
 # creating a new flutter project
 flutter create $1
 
-# remving the default main.dart file
+# removing the default main.dart file
 rm $1/lib/main.dart
 echo "Removed main.dart"
 

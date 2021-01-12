@@ -1,0 +1,27 @@
+" this is a comment
+"set nocompatible
+set encoding=UTF-8
+syntax on " enable syntax highlighting
+set number " shows line numbers on the left
+set smartindent " help in proper indentation
+set tabstop=4 " makes a tab space=4 default is 8
+set incsearch " highlights the results on the go as you search. Try <Esc>/[search-text]
+set showmatch " highlights matching braces
+set relativenumber " shows relative number lines
+set smartcase " search is case insensitive unless the search contains capital letters
+set hlsearch " highlights all found items for the search
+" set cursorline
+" hi CursorLine   cterm=NONE ctermbg=white ctermfg=black
+
+"remapping hjkl to jkl;
+noremap j h
+noremap k j
+noremap l k
+noremap ; l
+
+"remapping <Esc> to jj
+inoremap jj <Esc>
+
+"remapping <Esc> to jk
+inoremap jk <Esc>
+

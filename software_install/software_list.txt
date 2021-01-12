@@ -19,7 +19,7 @@ kdenlive
 spotify
 wps-office-multilang
 neofetch
-deepin picker
+pick-colour-picker #deepin picker
 
 gnome-tweak-tool
 	-fonts

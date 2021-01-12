@@ -1,0 +1,59 @@
+#! /bin/sh
+
+set -xv
+
+# sends logs and errors to this bspwm.log file
+rm /tmp/bspwm.log
+exec 2>>/tmp/bspwm.log
+
+bspc query -M --names
+bspc monitor eDP-1 -d I II III IV V
+
+pkill sxhkd
+sxhkd &
+
+pkill picom
+picom &
+
+#pkill compton
+#compton &
+pkill feh 
+feh --randomize --bg-fill ~/Pictures/Wallpapers/ &
+
+bspc config border_width         0
+bspc config window_gap          10
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# the exact name used for the processes here can be found out by using xprop
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a spotify desktop='^2' #spotify doesn't set it's WM_CLASS at the right time and this holds for all electron apps in general,for now 
+bspc rule -a code desktop='^3' 
+bspc rule -a Google-chrome desktop='^1'
+bspc rule -a Gnome-terminal desktop='^2' 
+
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+# single tap for left click and 2-finger tap for right click
+xinput set-prop 11 314 1
+
+# natural scrolling
+xinput set-prop 11 322 1
+
+# Remove x cursor
+xsetroot -cursor_name left_ptr & 
+
+# follow cursor for window focus
+bspc config focus_follows_pointer true
+
+# remove title bar from gnome-terminal
+gsettings set org.gnome.Terminal.Legacy.Settings headerbar "@mb false"
+
+
+pkill polybar
+polybar example
+

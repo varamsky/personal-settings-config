@@ -1,0 +1,9 @@
+@theme "/usr/share/rofi/themes/android_notification.rasi"
+
+configuration {
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  font: "Hack Nerd Font 10";
+  show-icons: false;
+  modi: "window,run,drun";
+}
